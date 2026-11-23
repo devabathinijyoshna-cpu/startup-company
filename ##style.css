@@ -1,0 +1,195 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    background: #111c35;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 29px;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 510px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(120deg, #0f172a, #312e81);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tagline {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero-content > p:not(.tagline) {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #0369a1;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.heading {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    line-height: 1.8;
+}
+
+.about-content h3 {
+    margin-bottom: 15px;
+}
+
+.about-content img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.services {
+    background: #111c35;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.service-card {
+    width: 250px;
+    padding: 30px;
+    background: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.service-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.7;
+}
+
+.mission {
+    max-width: 750px;
+    text-align: center;
+    margin: auto;
+    line-height: 2;
+}
+
+.contact {
+    background: #111c35;
+    text-align: center;
+    line-height: 3;
+}
+
+footer {
+    background: #080e1d;
+    text-align: center;
+    padding: 25px;
+    color: #cbd5e1;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
